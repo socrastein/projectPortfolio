@@ -1,0 +1,56 @@
+.projectCardContainer {
+  display: flex;
+  flex-direction: column;
+  border: solid white 1px;
+  padding: 1rem;
+  gap: 1rem;
+
+  background-color: var(--backgroundLight);
+  box-shadow: 2px 2px 4px var(--theme-blue);
+  animation: fadeIn;
+  animation-duration: 2s;  
+  animation-fill-mode: forwards;
+}
+
+.projectCardTitleContainer {
+  display: flex;
+  border-bottom: solid 1px var(--theme-blue);
+  border-radius: 0;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projectCardTitleIcon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.projectCardTitleText {
+  font-size: 1.5rem;
+}
+
+.projectCardDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projectCardDescriptionShort {
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.projectCardDescriptionLong {
+  text-align: left;
+}
+
+.projectCardButtonsContainer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.projectCardButton {
+  border: solid purple 1px;
+}

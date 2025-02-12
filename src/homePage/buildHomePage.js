@@ -1,13 +1,13 @@
+import { getAllProjects } from "../projectPage/projectClass";
+import { buildProjectCard } from "./buildProjectCard";
+
 const appContainer = document.querySelector('#app');
 
 export default function buildHomePage() {
     appContainer.innerHTML = '';
-    const mainContainer = document.createElement("div");
-    mainContainer.classList.add("pageMainContainer");
+    appContainer.innerHTML += '<h1>This is my portfolio home page</h1>';
 
-    mainContainer.innerHTML = '<h1>This is my portfolio home page</h1>';
-
-    appContainer.appendChild(mainContainer);
+    buildProjectCards();
 };
 
 function buildHeading() {
@@ -15,7 +15,14 @@ function buildHeading() {
 }
 
 function buildProjectCards() {
-    const container = document.createElement("div");
+    const projectsArray = getAllProjects();
+    projectsArray.forEach((projectObject, index) => {
+        setTimeout(() => {
+            const projectElement = buildProjectCard(projectObject);
+            appContainer.appendChild(projectElement);
+        }, "300" * (index));
+
+    });
 }
 
 function buildResourceCard() {

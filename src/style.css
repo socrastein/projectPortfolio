@@ -5,18 +5,25 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --backgroundDark: #1a1a1a;
+  --backgroundLight: #242424;
+  background-color: var(--backgroundDark);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  --theme-blue: #646cff;
+
+  --textColor: #e3e3e3;
 }
 
 * {
   box-sizing: inherit;
   border-radius: inherit;
   margin: 0;
+  color: var(--textColor);
 }
 
 a {
@@ -25,7 +32,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--theme-blue);
 }
 
 body {
@@ -59,7 +66,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: var(--theme-blue);
 }
 
 button:focus,
@@ -86,6 +93,11 @@ button:focus-visible {
 
 .showBorder {
   border: solid white 1px;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
 
 /* NAV BAR */
@@ -118,6 +130,10 @@ button:focus-visible {
   padding: 2rem;
   text-align: center;
   min-height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .iconSmall {
@@ -164,7 +180,6 @@ button:focus-visible {
 }
 
 /* PROJECT PAGE */
-
 
 /* FOOTER */
 
