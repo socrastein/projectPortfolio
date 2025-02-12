@@ -4,8 +4,8 @@ export default defineConfig({
     base: "/projectPortfolio",
     plugins: [],
     resolve: {
-        alias: [
-
-        ]
+        alias: {
+            src: "/src",
+        }
     },
 });

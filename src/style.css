@@ -13,6 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+* {
+  box-sizing: inherit;
+  border-radius: inherit;
+  margin: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -30,39 +36,15 @@ body {
   align-items: center;
   min-width: 320px;
   min-height: 100vh;
+
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 1rem;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
 
 button {
@@ -72,7 +54,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -96,4 +78,98 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.smallContainer {
+  padding: 0.5rem;
+}
+
+.showBorder {
+  border: solid white 1px;
+}
+
+/* NAV BAR */
+
+#navBar {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  justify-content: space-between;
+  width: 100%;
+
+  border-bottom: solid grey 1px;
+  border-radius: 0;
+}
+
+.navBarTitle {
+}
+
+.dropdownContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+/* MAIN PAGE */
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  min-height: 100dvh;
+}
+
+.iconSmall {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.iconLarge {
+  height: 2rem;
+  width: 2rem;
+}
+
+.logo,
+.icon {
+  will-change: filter;
+  transition: filter 300ms;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #ffffffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #ffffffaa);
+}
+
+.logoLarge {
+  height: 4rem;
+  width: 4rem;
+}
+
+.logoSmall {
+  height: 2rem;
+  width: 2rem;
+}
+.reverseColor {
+  filter: invert();
+}
+
+.card {
+  padding: 2em;
+}
+
+/* PROJECT PAGE */
+
+
+/* FOOTER */
+
+#footer {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
 }
