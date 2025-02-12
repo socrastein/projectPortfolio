@@ -1,25 +1,16 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+import './style.css';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello World!</h1>
-    <h2>This will by my project portfolio</h2>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+import buildNavBar from './navBar/buildNavBar.js';
+import buildHomePage from './homePage/buildHomePage.js';
+import buildFooter from './footer/buildFooter.js';
 
-setupCounter(document.querySelector('#counter'))
+const navBarContainer = document.querySelector('#navBar');
+const appContainer = document.querySelector('#app');
+const footerContainer = document.querySelector('#footer');
+
+//Build each major piece of the home page and append it to the main #app container
+navBarContainer.appendChild(buildNavBar());
+appContainer.appendChild(buildHomePage());
+footerContainer.appendChild(buildFooter());
+
+setupCounter(document.querySelector('#counter'));
