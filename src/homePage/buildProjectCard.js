@@ -52,6 +52,7 @@ export function buildProjectCard(projectObject) {
     linkToProjectPage.classList.add("projectCardButton");
     linkToProjectPage.textContent = "Read More";
     linkToProjectPage.addEventListener("click", () => {
+        window.location.href = `${import.meta.env.BASE_URL}project.html`
         buildProjectPage(projectObject);
     });
 
