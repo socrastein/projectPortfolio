@@ -29,7 +29,7 @@ switch (window.location.pathname) {
 
     default:
         console.log("Defaulting to home page");
-        // buildHomePage();
+        buildHomePage();
         break;
 }
 
