@@ -19,7 +19,7 @@ function homePageIcon() {
     homeButton.classList.add("navBarHomeButton");
 
     homeButton.addEventListener("click", () => {
-        window.location.href = "./index.html";
+        window.location.href = "/projectPortfolio/index.html";
     });
 
     return homeButton;
@@ -30,7 +30,7 @@ function aboutLink(text) {
     title.classList.add("navBarAbout");
     title.textContent = text;
     title.addEventListener("click", () => {
-        window.location.href = "./about.html";
+        window.location.href = "/projectPortfolio/about.html";
     });
 
     return title;

@@ -24,7 +24,7 @@ function buildHeading() {
   headerPicture.classList.add("homeHeaderPicture");
   headerPicture.src = mattPhoto;
   headerPicture.addEventListener("click", () => {
-    window.location.href = "./about.html"
+    window.location.href = "/projectPortfolio/about.html"
   })
 
   const title = document.createElement("h1");
