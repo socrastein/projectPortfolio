@@ -1,0 +1,31 @@
+.projectPageTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.projectPageIcon {
+  height: 100%;
+  width: 3rem;
+  background-color: var(--theme-blue);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.projectPageTitle {
+  text-align: left;
+  font-size: 2rem;
+}
+
+.projectPageDescription {
+}
+
+.projectPageButton {
+  background-color: var(--theme-blue);
+  font-size: 1.2rem;
+}
+
+.projectPageScreenShot {
+  width: 100%;
+  border-radius: .5rem;
+}
