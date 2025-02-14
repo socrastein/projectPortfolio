@@ -134,6 +134,8 @@ button:focus-visible {
   background-position: center;
   background-size: cover;
 
+  border-radius: 0 0 .5rem .5rem;
+
   animation-name: shiftSideways;
   animation-duration: 12s;
   animation-iteration-count: infinite;
