@@ -9,22 +9,25 @@ import buildFooter from './footer/buildFooter.js';
 // Build header and footer on every page
 // Build main page content depending on window.location
 
-console.log(window.location.pathname);
-
 buildNavBar();
 
 switch (window.location.pathname) {
     case `/projectPortfolio/index.html`:
+        console.log("Home page");
         buildHomePage();
         break;
     case `/projectPortfolio/project.html`:
-        buildProjectPage();
+        console.log("Project page");
+        // buildProjectPage() needs the project class object passed to it,
+        // so this is handled within the eventListener for the project page link
         break;
     case `/projectPortfolio/about.html`:
+        console.log("About page");
         buildAboutPage();
         break;
 
     default:
+        console.log("Defaulting to home page");
         buildHomePage();
         break;
 }
