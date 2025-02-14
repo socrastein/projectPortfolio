@@ -22,7 +22,7 @@ export function getAllProjects() {
 import liftingSchoolSitePhoto from "src/assets/photos/liftingSchoolSite.png";
 import liftingSchoolSiteIcon from "src/assets/icons/logo.svg";
 
-const liftingSchoolSite = new Project("Lifting School Website");
+const liftingSchoolSite = new Project("Lifting School Site");
 
 liftingSchoolSite.descriptionShort = "The site for my online personal training company";
 liftingSchoolSite.descriptionLong = "This is a longer description";
@@ -44,7 +44,7 @@ import liftingAppIcon from "src/assets/icons/dumbbell.svg";
 
 const liftingApp = new Project("Lifting App");
 
-liftingApp.descriptionShort = "Build, adjust and record your workouts";
+liftingApp.descriptionShort = "Build, adjust and record your workout programs";
 liftingApp.descriptionLong = "This is a longer description";
 
 liftingApp.image = liftingAppPhoto;
@@ -54,7 +54,7 @@ liftingApp.listOfFeatures.push("Feature 1");
 liftingApp.listOfFeatures.push("Feature 2");
 liftingApp.listOfFeatures.push("Feature 3");
 
-liftingApp.link = "https://theliftingschool.com/";
+liftingApp.link = "https://the-lifting-app.web.app/";
 
 allProjectsArray.push(liftingApp);
 
@@ -84,7 +84,7 @@ import nscaQuizzerIcon from "src/assets/icons/quiz.svg";
 
 const nscaQuizzer = new Project("NSCA Study App");
 
-nscaQuizzer.descriptionShort = "Quiz yourself with questions from the textbook";
+nscaQuizzer.descriptionShort = "Quiz yourself with questions from the NSCA CPT textbook";
 nscaQuizzer.descriptionLong = "This is a longer description";
 
 nscaQuizzer.image = nscaQuizzerPhoto;

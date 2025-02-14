@@ -15,6 +15,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --theme-blue: #646cff;
+  --theme-purple: #390a3f;
 
   --textColor: #e3e3e3;
 }
@@ -96,44 +97,47 @@ button:focus-visible {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* NAV BAR */
 
-#navBar {
-  display: flex;
-  align-items: center;
-  padding-left: 2rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  justify-content: space-between;
-  width: 100%;
 
-  border-bottom: solid grey 1px;
-  border-radius: 0;
-}
 
-.navBarTitle {
-}
-
-.dropdownContainer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
 /* MAIN PAGE */
 
+@keyframes shiftSideways {
+   from {
+    background-position-x: center;
+   }
+   to {
+    background-position-x: 25%;
+   }
+}
+
 #app {
-  margin: 0 auto;
-  padding: 2rem;
+  width: min(600px, 100%);
+  padding: 2rem 2%;
   text-align: center;
-  min-height: 100dvh;
+  min-height: 1600px;
 
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  align-items: center;
+  gap: 4rem;
+  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/starryBackground.jpg");
+  background-position: center;
+  background-size: cover;
+
+  animation-name: shiftSideways;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 .iconSmall {

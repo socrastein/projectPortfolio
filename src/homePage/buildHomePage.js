@@ -1,11 +1,14 @@
+import "./homePage.css"
+
 import { getAllProjects } from "../projectPage/projectClass";
 import { buildProjectCard } from "./buildProjectCard";
+import mattPhoto from "src/assets/photos/matt.jpg";
 
 const appContainer = document.querySelector("#app");
 
 export default function buildHomePage() {
   appContainer.innerHTML = "";
-  
+
   buildHeading();
   buildProjectCards();
 }
@@ -19,11 +22,15 @@ function buildHeading() {
 
   const headerPicture = document.createElement("img");
   headerPicture.classList.add("homeHeaderPicture");
+  headerPicture.src = mattPhoto;
+  headerPicture.addEventListener("click", () => {
+    window.location.href = "./about.html"
+  })
 
   const title = document.createElement("h1");
   title.classList.add("homeHeaderTitle");
   title.textContent =
-    "Hi! I'm Matt, and these are some of the coding projects I've built";
+    "Hi! I'm Matt\n\nThese are some of the coding projects I've built";
 
   titleAndPicContainer.appendChild(headerPicture);
   titleAndPicContainer.appendChild(title);

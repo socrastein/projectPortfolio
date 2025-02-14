@@ -1,0 +1,46 @@
+#navBar {
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0 0;
+  justify-content: space-between;
+  width: min(100%, 900px);
+
+  border-bottom: solid black 1px;
+  border-radius: 0;
+}
+
+.navBarHomeButton {
+  height: 100%;
+  aspect-ratio: 1;
+  padding: 0.25rem;
+  background-color: var(--theme-blue);
+  background-image: url("/home.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 75%;
+
+  border-radius: 0 0 0.5rem 0;
+}
+
+.navBarAbout {
+  color: var(--backgroundDark);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: var(--theme-blue);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  height: 80%;
+}
+
+.navBarAbout:hover {
+  cursor: pointer;
+}
+
+.dropdownContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

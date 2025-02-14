@@ -1,0 +1,29 @@
+.homeHeaderContainer {
+}
+
+.homeHeaderTitleAndPicContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem;
+  align-items: center;
+
+  /* background-image: radial-gradient(ellipse at 50% 10%, var(--theme-blue), 1%, var(--backgroundDark)) */
+}
+
+.homeHeaderPicture {
+  height: 16rem;
+  transition: transform 250ms;
+
+}
+
+.homeHeaderPicture:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: transform 250ms;
+}
+
+.homeHeaderTitle {
+  white-space: pre-line;
+  font-size: 2.5rem;
+}

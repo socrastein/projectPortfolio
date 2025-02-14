@@ -1,3 +1,5 @@
+import "./navBar.css";
+
 import buildHomePage from "../homePage/buildHomePage";
 import homeIcon from "src/assets/icons/home.svg";
 import arrowIcon from "src/assets/icons/arrow.svg";
@@ -8,26 +10,29 @@ const navBarContainer = document.querySelector('#navBar');
 
 export default function buildNavBar() {
     navBarContainer.appendChild(homePageIcon());
-    navBarContainer.appendChild(centerTitle("Matt Talley's Portfolio"))
+    navBarContainer.appendChild(aboutLink("About Me"));
     // navBarContainer.appendChild(projectDropDown());
 }
 
 function homePageIcon() {
-    const logo = document.createElement("button");
-    logo.classList.add("icon", "iconLarge", "reverseColor");
-    logo.style.backgroundImage = `url("${homeIcon}")`;
+    const homeButton = document.createElement("button");
+    homeButton.classList.add("navBarHomeButton");
 
-    logo.addEventListener("click", () => {
+    homeButton.addEventListener("click", () => {
+        window.location.href = "./index.html";
         buildHomePage();
     });
 
-    return logo;
+    return homeButton;
 }
 
-function centerTitle(text) {
-    const title = document.createElement("h3");
-    title.classList.add("navBarTitle");
+function aboutLink(text) {
+    const title = document.createElement("div");
+    title.classList.add("navBarAbout");
     title.textContent = text;
+    title.addEventListener("click", () => {
+        window.location.href = "./about.html";
+    });
 
     return title;
 }
