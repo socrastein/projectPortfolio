@@ -17,7 +17,24 @@
   font-size: 2rem;
 }
 
+.projectPageFeaturesContainer {
+}
+
+.projectPageFeatureList {
+  padding: 0;
+}
+
+.projectPageFeatureList li::marker {
+  color: var(--theme-blue);
+}
+
+.projectPageFeatureList li {
+  text-align: left;
+}
+
 .projectPageDescription {
+  white-space: pre-line;
+  font-size: 1.1rem;
 }
 
 .projectPageButton {
@@ -27,5 +44,5 @@
 
 .projectPageScreenShot {
   width: 100%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
