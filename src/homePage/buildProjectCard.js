@@ -52,8 +52,8 @@ export function buildProjectCard(projectObject) {
     linkToProjectPage.classList.add("projectCardButton");
     linkToProjectPage.textContent = "Read More";
     linkToProjectPage.addEventListener("click", () => {
+        storeProjectObject(projectObject);
         window.location.href = `${import.meta.env.BASE_URL}project.html`
-        buildProjectPage(projectObject);
     });
 
     buttonsContainer.appendChild(linkToProject);
@@ -67,4 +67,8 @@ export function buildProjectCard(projectObject) {
     container.appendChild(buttonsContainer);
 
     return container;
+}
+
+function storeProjectObject(projectObject){
+    sessionStorage.setItem("storedProject", JSON.stringify(projectObject));
 }

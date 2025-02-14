@@ -18,8 +18,9 @@ switch (window.location.pathname) {
         break;
     case `/projectPortfolio/project.html`:
         console.log("Project page");
-        // buildProjectPage() needs the project class object passed to it,
-        // so this is handled within the eventListener for the project page link
+        const storedProject = loadProjectObject();
+        console.log(storedProject);
+        buildProjectPage(storedProject);
         break;
     case `/projectPortfolio/about.html`:
         console.log("About page");
@@ -28,8 +29,14 @@ switch (window.location.pathname) {
 
     default:
         console.log("Defaulting to home page");
-        buildHomePage();
+        // buildHomePage();
         break;
 }
 
 buildFooter();
+
+function loadProjectObject() {
+    const storedProject = sessionStorage.getItem("storedProject");
+    const parsedObject = JSON.parse(storedProject);
+    return parsedObject;
+}
