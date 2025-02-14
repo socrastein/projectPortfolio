@@ -1,8 +1,7 @@
-import "./projectPage.css"
-
-const appContainer = document.querySelector("#app");
+import "./projectPage.css";
 
 export default function buildProjectPage(projectObj) {
+  const appContainer = document.querySelector("#app");
   appContainer.innerHTML = "";
 
   const titleContainer = document.createElement("div");
@@ -40,6 +39,6 @@ export default function buildProjectPage(projectObj) {
   appContainer.append(screenShot);
 }
 
-const videoContainer = document.createElement("div");
-videoContainer.innerHTML =
-  '<iframe src="https://drive.google.com/file/d/166DNUGfodhgaeYB_yTEHiqg_KJnk3x0L/preview" width="640" height="480" allow="autoplay"></iframe>';
+// const videoContainer = document.createElement("div");
+// videoContainer.innerHTML =
+//   '<iframe src="https://drive.google.com/file/d/166DNUGfodhgaeYB_yTEHiqg_KJnk3x0L/preview" width="640" height="480" allow="autoplay"></iframe>';

@@ -59,7 +59,7 @@ liftingApp.link = "https://the-lifting-app.web.app/";
 allProjectsArray.push(liftingApp);
 
 // Battleship
-import battleshipPhoto from "src/assets/photos/liftingSchoolSite.png";
+import battleshipPhoto from "src/assets/photos/battleship.png";
 import battleshipIcon from "src/assets/icons/ship.svg";
 
 const battleShip = new Project("Battleship");

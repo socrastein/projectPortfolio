@@ -1,7 +1,5 @@
 import "./navBar.css";
 
-import buildHomePage from "../homePage/buildHomePage";
-import homeIcon from "src/assets/icons/home.svg";
 import arrowIcon from "src/assets/icons/arrow.svg";
 
 
