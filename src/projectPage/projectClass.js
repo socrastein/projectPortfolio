@@ -18,6 +18,29 @@ export function getAllProjects() {
     return allProjectsArray;
 }
 
+// CLASS TEMPLATE
+/**
+import PHOTO from "src/assets/photos/PHOTO.png";
+import ICON from "src/assets/icons/ICON.svg";
+
+const NEWPROJECT = new Project("NEW PROJECT NAME");
+
+NEWPROJECT.descriptionShort = "Quiz yourself with questions from the NSCA CPT textbook";
+NEWPROJECT.descriptionLong = "I wanted to make something that other personal trainers could use to help study for the NSCA CPT exams, so I posted this in the r/personaltrainig sub on Reddit.\n\nYou can select which chapters you would like to quiz on, and all the questions are pulled from the study questions at the end of each chapter in the official textbook.";
+
+NEWPROJECT.image = PHOTO;
+NEWPROJECT.icon = ICON;
+
+NEWPROJECT.listOfFeatures.push("Select chapters to quiz on");
+NEWPROJECT.listOfFeatures.push("Score display when finished");
+NEWPROJECT.listOfFeatures.push("Current/total questions display");
+
+NEWPROJECT.link = "https://socrastein.github.io/PROJECT/";
+
+allProjectsArray.push(NEWPROJECT);
+*/
+
+
 // Lifting School Website
 import liftingSchoolSitePhoto from "src/assets/photos/liftingSchoolSite.png";
 import liftingSchoolSiteIcon from "src/assets/icons/logo.svg";
@@ -98,3 +121,46 @@ nscaQuizzer.listOfFeatures.push("Current/total questions display");
 nscaQuizzer.link = "https://socrastein.github.io/NSCAstudying/";
 
 allProjectsArray.push(nscaQuizzer);
+
+// Minesweeper
+
+import minesweeperPhoto from "src/assets/photos/minesweeper.png";
+import minesweeperIcon from "src/assets/icons/bomb.svg";
+
+const minesweeper = new Project("Minesweeper");
+
+minesweeper.descriptionShort = "Old school logic game with three different grid sizes";
+minesweeper.descriptionLong = "I believe this is the first project I built that utilized some recursion; the function for checking and clearing all the empty space around a selected square calls itself to keep checking neighboring regions.\n\nI played this game as a kid, so being able to build it myself years later felt pretty cool!";
+
+minesweeper.image = minesweeperPhoto;
+minesweeper.icon = minesweeperIcon;
+
+minesweeper.listOfFeatures.push("Three levels of difficulty");
+minesweeper.listOfFeatures.push("Mark sus squares with flags");
+minesweeper.listOfFeatures.push("Empty space cleared recursively");
+
+minesweeper.link = "https://socrastein.github.io/minesweeper/";
+
+allProjectsArray.push(minesweeper);
+
+//Weight Plate Counter
+
+import plateCounterPhoto from "src/assets/photos/weightCalculator.png";
+import plateCounterIcon from "src/assets/icons/weight.svg";
+
+const plateCounter = new Project("Plate Counter");
+
+plateCounter.descriptionShort = "Calculate the total weight on your barbell";
+
+plateCounter.descriptionLong = "Sometimes, when you're really tired, doing the 'plate math' on your barbell is easy to mess up, especially if you have several different sizes.\n\nThis app lets you punch in the weights and totals everything, including the standard 45 lbs of the barbell. Currently only supports Freedom Units, but I plan to expand its functionality to include different sized barbells and KG plates.";
+
+plateCounter.image = plateCounterPhoto;
+plateCounter.icon = plateCounterIcon;
+
+plateCounter.listOfFeatures.push("CSS representation of barbell");
+plateCounter.listOfFeatures.push("Add or remove plates as you lift");
+plateCounter.listOfFeatures.push("Total updates as you change plates");
+
+plateCounter.link = "https://socrastein.github.io/weightPlateCounter/";
+
+allProjectsArray.push(plateCounter);
