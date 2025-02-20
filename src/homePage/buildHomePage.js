@@ -42,12 +42,17 @@ function buildHeading() {
 
 function buildProjectCards() {
   const appContainer = document.querySelector("#app");
+
+  const projectCardsContainer = document.createElement("div");
+  projectCardsContainer.classList.add("projectCardsMainContainer");
+  appContainer.appendChild(projectCardsContainer);
+
   const projectsArray = getAllProjects();
   projectsArray.forEach((projectObject, index) => {
-    setTimeout(() => {
-      const projectElement = buildProjectCard(projectObject);
-      appContainer.appendChild(projectElement);
-    }, "300" * index);
+    const projectElement = buildProjectCard(projectObject);
+    projectCardsContainer.appendChild(projectElement);
+    // setTimeout(() => {
+    // }, "300" * index);
   });
 }
 

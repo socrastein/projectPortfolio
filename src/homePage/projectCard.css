@@ -1,3 +1,11 @@
+.projectCardsMainContainer {
+  width: min(1280px, 100%);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+
 .projectCardContainer {
   display: flex;
   flex-direction: column;
@@ -5,7 +13,7 @@
   padding: 1rem;
   gap: 1rem;
 
-  width: 100%;
+  width: min(100%, 600px);
 
   background-color: var(--backgroundLight);
   box-shadow: 2px 2px 4px var(--theme-blue);
@@ -26,7 +34,7 @@
   height: 2.5rem;
   width: 2.5rem;
   background-color: var(--theme-blue);
-  padding: .25rem;
+  padding: 0.25rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
 
@@ -64,4 +72,9 @@
   color: var(--backgroundDark);
   background-color: var(--theme-blue);
   border: solid black 1px;
+  transition: all 250ms;
+}
+
+.projectCardButton:hover {
+  transform: translateY(-.25rem);
 }

@@ -37,7 +37,6 @@ a:hover {
 }
 
 body {
-  max-width: 1280px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -121,17 +120,18 @@ button:focus-visible {
 }
 
 #app {
-  width: min(600px, 100%);
+  width: 100dvw;
   padding: 2rem 2%;
   text-align: center;
-  min-height: 1600px;
+  min-height: 2000px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("/starryBackground.jpg");
+  background-image: linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.6)), url("/starryBackground.jpg");
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
   border-radius: 0 0 .5rem .5rem;

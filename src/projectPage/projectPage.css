@@ -1,3 +1,11 @@
+.projectPageMainContainer {
+  display: flex;
+  flex-direction: column;
+  width: min(640px, 100%);
+  align-items: center;
+  gap: 4rem;
+}
+
 .projectPageTitleContainer {
   display: flex;
   align-items: center;
@@ -43,6 +51,6 @@
 }
 
 .projectPageScreenShot {
-  width: 100%;
+  width: min(100%, 600px);
   border-radius: 0.5rem;
 }

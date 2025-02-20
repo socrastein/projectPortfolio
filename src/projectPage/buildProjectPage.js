@@ -4,6 +4,9 @@ export default function buildProjectPage(projectObj) {
   const appContainer = document.querySelector("#app");
   appContainer.innerHTML = "";
 
+  const projectContainer = document.createElement("div");
+  projectContainer.classList.add("projectPageMainContainer");
+
   const titleContainer = document.createElement("div");
   titleContainer.classList.add("projectPageTitleContainer");
 
@@ -49,11 +52,13 @@ export default function buildProjectPage(projectObj) {
   screenShot.classList.add("projectPageScreenShot");
   screenShot.src = projectObj.image;
 
-  appContainer.appendChild(titleContainer);
-  appContainer.appendChild(featuresContainer);
-  appContainer.append(descriptionContainer);
-  appContainer.append(linkToProject);
-  appContainer.append(screenShot);
+  projectContainer.appendChild(titleContainer);
+  projectContainer.appendChild(featuresContainer);
+  projectContainer.append(descriptionContainer);
+  projectContainer.append(linkToProject);
+  projectContainer.append(screenShot);
+
+  appContainer.appendChild(projectContainer);
 }
 
 // const videoContainer = document.createElement("div");
