@@ -143,7 +143,7 @@ minesweeper.link = "https://socrastein.github.io/minesweeper/";
 
 allProjectsArray.push(minesweeper);
 
-//Weight Plate Counter
+// Weight Plate Counter
 
 import plateCounterPhoto from "src/assets/photos/weightCalculator.png";
 import plateCounterIcon from "src/assets/icons/weight.svg";
@@ -151,7 +151,6 @@ import plateCounterIcon from "src/assets/icons/weight.svg";
 const plateCounter = new Project("Plate Counter");
 
 plateCounter.descriptionShort = "Calculate the total weight on your barbell";
-
 plateCounter.descriptionLong = "Sometimes, when you're really tired, doing the 'plate math' on your barbell is easy to mess up, especially if you have several different sizes.\n\nThis app lets you punch in the weights and totals everything, including the standard 45 lbs of the barbell. Currently only supports Freedom Units, but I plan to expand its functionality to include different sized barbells and KG plates.";
 
 plateCounter.image = plateCounterPhoto;
@@ -164,3 +163,45 @@ plateCounter.listOfFeatures.push("Total updates as you change plates");
 plateCounter.link = "https://socrastein.github.io/weightPlateCounter/";
 
 allProjectsArray.push(plateCounter);
+
+// Weather App
+
+import weatherAppPhoto from "src/assets/photos/weatherApp.png";
+import weatherAppIcon from "src/assets/icons/temperature.svg";
+
+const weatherApp = new Project("Weather App");
+
+weatherApp.descriptionShort = "Look up current weather by city or zip code";
+weatherApp.descriptionLong = "This was my first project that involved retrieving and displaying data from an API, which involved careful reading of the documentation.\n\nYou can switch between imperial and metric units by clicking the temperature and wind speed containers. I also incorporated gifs into the banner that reflect the current sky conditions. ";
+
+weatherApp.image = weatherAppPhoto;
+weatherApp.icon = weatherAppIcon;
+
+weatherApp.listOfFeatures.push("Pulls data from Open Weather API");
+weatherApp.listOfFeatures.push("Animated GIFs for sky condition");
+weatherApp.listOfFeatures.push("Toggle between imperial and metric");
+
+weatherApp.link = "https://socrastein.github.io/weather-app/";
+
+allProjectsArray.push(weatherApp);
+
+// Calculator
+
+import calculatorPhoto from "src/assets/photos/calculator.png";
+import calculatorIcon from "src/assets/icons/calculator.svg";
+
+const calculator = new Project("Calculator");
+
+calculator.descriptionShort = "Calculator that shows last few lines of history";
+calculator.descriptionLong = "This was an Odin Project assignment that I made a bit more challenging by incorporating a history display for the last four operations, and I went a little beyond the basic arithmetic by adding square roots and exponents.\n\nI modeled the style off of a Linux calculator app, and found a custom font to get the classic seven-segment number display.";
+
+calculator.image = calculatorPhoto;
+calculator.icon = calculatorIcon;
+
+calculator.listOfFeatures.push("Basic arithmetic, exponents and square root");
+calculator.listOfFeatures.push("History displays last four operations");
+calculator.listOfFeatures.push("Styled to look like a physical device");
+
+calculator.link = "https://socrastein.github.io/calculator/";
+
+allProjectsArray.push(calculator);
