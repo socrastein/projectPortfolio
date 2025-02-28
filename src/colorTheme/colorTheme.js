@@ -5,12 +5,12 @@ const rootColorVariable = `--themeColor`;
 
 const themeColors = {
     blue: "#646cff", //"76, 91, 141"
-    green: "#728461", //"114, 132, 97"
-    orange: "#9d7751", //"157, 119, 81"
     purple: "#6c5a91", //"108, 90, 145"
     pink: "#8f5173", //"143, 81, 115"
-    yellow: "#c8ac69", //"200, 172, 105"
     red: "#c15b58", //"193, 91, 88"
+    orange: "#b7613f", //"157, 119, 81"
+    yellow: "#c8ac69", //"200, 172, 105"
+    green: "#378e3c", //"114, 132, 97"
 };
 
 function changeThemeColor(newColor) {
@@ -59,6 +59,7 @@ function createColorOption(name, color) {
         changeThemeColor(color);
         removeColorHighlight();
         event.target.closest(".colorThemeMenuColorOption").classList.add("colorThemeMenuColorOptionHighlight");
+        saveThemeColorToLocalStorage(color);
     });
 
     const colorLabel = document.createElement("p");
@@ -79,4 +80,15 @@ function removeColorHighlight() {
     const currentHighlight = document.querySelector(".colorThemeMenuColorOptionHighlight");
     console.log(currentHighlight);
     currentHighlight.classList.remove("colorThemeMenuColorOptionHighlight");
+}
+
+function saveThemeColorToLocalStorage(color){
+    localStorage.setItem("themeColor", color);
+}
+
+export function setThemeColorFromLocalStorage(){
+    const color = localStorage.getItem("themeColor");
+    if(color){
+        changeThemeColor(color);
+    }
 }

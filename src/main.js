@@ -1,5 +1,7 @@
 import './style.css';
 
+import { setThemeColorFromLocalStorage } from './colorTheme/colorTheme.js';
+
 import buildNavBar from './navBar/buildNavBar.js';
 import buildHomePage from './homePage/buildHomePage.js';
 import buildProjectPage from './projectPage/buildProjectPage.js';
@@ -9,6 +11,7 @@ import buildFooter from './footer/buildFooter.js';
 // Build header and footer on every page
 // Build main page content depending on window.location
 
+setThemeColorFromLocalStorage();
 buildNavBar();
 
 switch (window.location.pathname) {
