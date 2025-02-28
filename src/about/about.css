@@ -33,6 +33,6 @@
 
 .aboutDescription hr {
   width: 50%;
-  color: var(--theme-blue);
+  color: var(--themeColor);
 }
 

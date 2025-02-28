@@ -16,7 +16,7 @@
   width: min(100%, 600px);
 
   background-color: var(--backgroundLight);
-  box-shadow: 2px 2px 4px var(--theme-blue);
+  box-shadow: 2px 2px 4px var(--themeColor);
   animation: fadeIn;
   animation-duration: 2s;
   animation-fill-mode: forwards;
@@ -24,7 +24,7 @@
 
 .projectCardTitleContainer {
   display: flex;
-  border-bottom: solid 1px var(--theme-blue);
+  border-bottom: solid 1px var(--themeColor);
   border-radius: 0;
   align-items: center;
   gap: 1rem;
@@ -33,7 +33,7 @@
 .projectCardTitleIcon {
   height: 2.5rem;
   width: 2.5rem;
-  background-color: var(--theme-blue);
+  background-color: var(--themeColor);
   padding: 0.25rem;
   border-radius: 0.5rem 0.5rem 0 0;
 }
@@ -70,7 +70,7 @@
   padding: 0.5rem;
   font-weight: 600;
   color: var(--backgroundDark);
-  background-color: var(--theme-blue);
+  background-color: var(--themeColor);
   border: solid black 1px;
   transition: all 250ms;
 }

@@ -14,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --theme-blue: #646cff;
+  --themeColor: #646cff;
   --theme-purple: #390a3f;
 
   --textColor: #e3e3e3;
@@ -33,7 +33,7 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--theme-blue);
+  color: var(--themeColor);
 }
 
 body {
@@ -66,7 +66,7 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: var(--theme-blue);
+  border-color: var(--themeColor);
 }
 
 button:focus,

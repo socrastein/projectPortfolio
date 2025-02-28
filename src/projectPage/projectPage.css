@@ -15,7 +15,7 @@
 .projectPageIcon {
   height: 100%;
   width: 3rem;
-  background-color: var(--theme-blue);
+  background-color: var(--themeColor);
   border-radius: 0.5rem;
   padding: 0.5rem;
 }
@@ -33,7 +33,7 @@
 }
 
 .projectPageFeatureList li::marker {
-  color: var(--theme-blue);
+  color: var(--themeColor);
 }
 
 .projectPageFeatureList li {
@@ -46,7 +46,7 @@
 }
 
 .projectPageButton {
-  background-color: var(--theme-blue);
+  background-color: var(--themeColor);
   font-size: 1.2rem;
 }
 

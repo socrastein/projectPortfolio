@@ -8,7 +8,7 @@
   gap: 2rem;
   align-items: center;
 
-  /* background-image: radial-gradient(ellipse at 50% 10%, var(--theme-blue), 1%, var(--backgroundDark)) */
+  /* background-image: radial-gradient(ellipse at 50% 10%, var(--themeColor), 1%, var(--backgroundDark)) */
 }
 
 .homeHeaderPicture {
