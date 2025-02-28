@@ -3,9 +3,7 @@ import "./navBar.css";
 import { createThemeColorMenu } from "../colorTheme/colorTheme";
 import arrowIcon from "src/assets/icons/arrow.svg";
 
-
 const navBarContainer = document.querySelector('#navBar');
-
 
 export default function buildNavBar() {
     const navBarLeft = document.createElement("div");
