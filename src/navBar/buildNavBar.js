@@ -15,7 +15,7 @@ export default function buildNavBar() {
     const navBarRight = document.createElement("div");
     navBarRight.id = "navBarRight";
     navBarRight.appendChild(themeSelectionDropDown());
-    navBarRight.appendChild(aboutLink("About Me"));
+    navBarRight.appendChild(aboutLink("About"));
 
     navBarContainer.appendChild(navBarLeft);
     navBarContainer.appendChild(navBarRight);

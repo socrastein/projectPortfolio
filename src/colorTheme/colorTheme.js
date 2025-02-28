@@ -11,13 +11,13 @@ const themeColors = {
     pink: "#8f5173", //"143, 81, 115"
     yellow: "#c8ac69", //"200, 172, 105"
     red: "#c15b58", //"193, 91, 88"
-    grey: "#9d9d9d", //"157, 157, 157"
 };
 
 function changeThemeColor(newColor) {
     document.documentElement.style.setProperty(rootColorVariable, newColor);
 }
 
+// Make sure to add "stop event propagation" eventListener to parentElement
 export function createThemeColorMenu(parentElement, colorArray) {
     if (colorArray === undefined) {
         colorArray = themeColors;
@@ -33,39 +33,50 @@ export function createThemeColorMenu(parentElement, colorArray) {
     });
 
     for (const [key, value] of Object.entries(themeColors)) {
-        const colorContainer = document.createElement("div");
-        colorContainer.classList.add("colorThemeMenuColorOption");
+        const colorContainer = createColorOption(key, value);
 
         // Show which theme color is currently selected
         if (currentThemeColor === value) {
             colorContainer.classList.add("colorThemeMenuColorOptionHighlight");
         }
-
-        colorContainer.addEventListener("click", (event) => {
-            changeThemeColor(value);
-            document.querySelector(".colorThemeMenuColorOptionHighlight").classList.remove("colorThemeMenuColorOptionHighlight");
-            console.log(event);
-            event.target.closest(".colorThemeMenuColorOption").classList.add("colorThemeMenuColorOptionHighlight");
-        });
-
-        const colorLabel = document.createElement("p");
-        colorLabel.classList.add("colorThemeMenuColorLabel");
-        colorLabel.textContent = key.charAt(0).toUpperCase() + key.slice(1);
-
-        const colorPreview = document.createElement("div");
-        colorPreview.classList.add("colorThemeMenuColorPreview");
-        colorPreview.style.backgroundColor = value;
-
-        colorContainer.appendChild(colorLabel);
-        colorContainer.appendChild(colorPreview);
-
         container.appendChild(colorContainer);
     }
 
     window.addEventListener("click", () => {
-        container.style.visibility = "hidden";
+        container.remove();
     });
 
+    //Menu pops up just under the parent element with absolute position
     parentElement.style.position = "relative";
     parentElement.appendChild(container);
+}
+
+function createColorOption(name, color) {
+    const container = document.createElement("div");
+    container.classList.add("colorThemeMenuColorOption");
+
+    container.addEventListener("click", (event) => {
+        changeThemeColor(color);
+        removeColorHighlight();
+        event.target.closest(".colorThemeMenuColorOption").classList.add("colorThemeMenuColorOptionHighlight");
+    });
+
+    const colorLabel = document.createElement("p");
+    colorLabel.classList.add("colorThemeMenuColorLabel");
+    colorLabel.textContent = name.charAt(0).toUpperCase() + name.slice(1);
+
+    const colorPreview = document.createElement("div");
+    colorPreview.classList.add("colorThemeMenuColorPreview");
+    colorPreview.style.backgroundColor = color;
+
+    container.appendChild(colorLabel);
+    container.appendChild(colorPreview);
+
+    return container;
+}
+
+function removeColorHighlight() {
+    const currentHighlight = document.querySelector(".colorThemeMenuColorOptionHighlight");
+    console.log(currentHighlight);
+    currentHighlight.classList.remove("colorThemeMenuColorOptionHighlight");
 }

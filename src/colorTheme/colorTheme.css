@@ -5,7 +5,7 @@
     flex-direction: column;
     gap: .5rem;
     background-color: var(--backgroundDark);
-    width: 100%;
+    width: fit-content;
     border: solid var(--themeColor) 1px;
     z-index: 50;
 }
@@ -29,10 +29,11 @@
 
 .colorThemeMenuColorLabel {
     user-select: none;
+    font-size: .9rem;
 }
 
 .colorThemeMenuColorPreview {
     height: 1rem;
-    width: 1rem;
-
+    width: 1.5rem;
+    border-radius: .25rem;
 }
