@@ -15,6 +15,7 @@ export default defineConfig({
                 main: path.resolve(__dirname, '/index.html'),
                 about: path.resolve(__dirname, '/about.html'),
                 project: path.resolve(__dirname, '/project.html'),
+                projects: path.resolve(__dirname, '/projects.html')
             },
         },
     },

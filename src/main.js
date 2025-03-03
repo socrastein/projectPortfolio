@@ -4,6 +4,7 @@ import { setThemeColorFromLocalStorage } from './colorTheme/colorTheme.js';
 
 import buildNavBar from './navBar/buildNavBar.js';
 import buildHomePage from './homePage/buildHomePage.js';
+import { buildProjectCards } from './homePage/buildHomePage.js';
 import buildProjectPage from './projectPage/buildProjectPage.js';
 import buildAboutPage from './about/aboutPage.js';
 import buildFooter from './footer/buildFooter.js';
@@ -19,12 +20,19 @@ switch (window.location.pathname) {
         console.log("Home page");
         buildHomePage();
         break;
+
+    case `/projectPortfolio/projects.html`:
+        console.log("Projects page");
+        buildProjectCards();
+        break;
+
     case `/projectPortfolio/project.html`:
         console.log("Project page");
         const storedProject = loadProjectObject();
         console.log(storedProject);
         buildProjectPage(storedProject);
         break;
+        
     case `/projectPortfolio/about.html`:
         console.log("About page");
         buildAboutPage();

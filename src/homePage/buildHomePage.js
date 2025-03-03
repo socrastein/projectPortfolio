@@ -40,7 +40,7 @@ function buildHeading() {
   appContainer.appendChild(container);
 }
 
-function buildProjectCards() {
+export function buildProjectCards() {
   const appContainer = document.querySelector("#app");
 
   const projectCardsContainer = document.createElement("div");
