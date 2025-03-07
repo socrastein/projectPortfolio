@@ -1,3 +1,6 @@
+import { createApp, defineComponent } from 'vue';
+import App from './components/App.vue';
+
 import './style.css';
 
 import { setThemeColorFromLocalStorage } from './colorTheme/colorTheme.js';
@@ -14,6 +17,9 @@ import buildFooter from './footer/buildFooter.js';
 
 setThemeColorFromLocalStorage();
 buildNavBar();
+
+const app = createApp(App);
+// app.mount('#app');
 
 switch (window.location.pathname) {
     case `/projectPortfolio/index.html`:
@@ -32,7 +38,7 @@ switch (window.location.pathname) {
         console.log(storedProject);
         buildProjectPage(storedProject);
         break;
-        
+
     case `/projectPortfolio/about.html`:
         console.log("About page");
         buildAboutPage();
@@ -41,6 +47,7 @@ switch (window.location.pathname) {
     default:
         console.log("Defaulting to home page");
         buildHomePage();
+        // app.mount('#app');
         break;
 }
 
