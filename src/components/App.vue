@@ -8,7 +8,7 @@ const skillText = "text";
 </script>
 
 <template>
-  <div class="mainContainer">
+  <div class="mainDiv">
     <NavBar />
 
     <RouterView />
@@ -18,7 +18,7 @@ const skillText = "text";
 </template>
 
 <style scoped>
-.mainContainer {
+.mainDiv {
   position: relative;
   width: 100dvw;
   padding: 1%;
