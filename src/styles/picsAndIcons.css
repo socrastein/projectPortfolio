@@ -1,0 +1,12 @@
+.largePhoto {
+    height: 16rem;
+    width: 16rem;
+    border-radius: 25%;
+    transition: transform 250ms;
+  }
+  
+  .largePhoto:hover {
+    transform: scale(1.05);
+    transition: transform 250ms;
+    cursor: pointer;
+  }

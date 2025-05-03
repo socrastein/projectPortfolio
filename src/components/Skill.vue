@@ -1,26 +1,27 @@
 <script setup>
-    const props = defineProps(['icon', 'name', 'description'])
+const props = defineProps(["icon", "name", "description"]);
 </script>
 
 <template>
-    <div class="skillContainer">
-    <img class="skillIcon" :src="icon">
-    <h2>{{ props.name  }}</h2>
+  <div class="skillContainer">
+    <img class="skillIcon" :src="icon" />
+    <h2>{{ props.name }}</h2>
     <p>{{ props.description }}</p>
-    </div>
-
+  </div>
 </template>
 
-<style>
+<style scoped>
 .skillContainer {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    justify-content: flex-start;
+  width: fit-content;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .skillIcon {
-    height: 3rem;
-    width: 3rem;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 0;
 }
 </style>

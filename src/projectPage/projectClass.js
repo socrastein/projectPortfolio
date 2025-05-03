@@ -1,3 +1,5 @@
+
+
 class Project {
     constructor(name) {
         this.name = name;
@@ -7,8 +9,14 @@ class Project {
         this.image;
         this.icon;
 
+        this.path = this.generatePath(name);
+
         this.listOfFeatures = [];
         this.link = "";
+    }
+
+    generatePath(name) {
+        return name.toLowerCase().replace(/\s+/g, '-'); // Replace spaces with hyphens
     }
 }
 
@@ -17,6 +25,8 @@ const allProjectsArray = [];
 export function getAllProjects() {
     return allProjectsArray;
 }
+
+
 
 // CLASS TEMPLATE
 /**
@@ -48,7 +58,7 @@ import liftingSchoolSiteIcon from "src/assets/icons/logo.svg";
 const liftingSchoolSite = new Project("Lifting School Site");
 
 liftingSchoolSite.descriptionShort = "The site for my online personal training company";
-liftingSchoolSite.descriptionLong = "When I first started learning how to build a website, one of my major goals was to eventually rebuild my own business site so I didn't have to pay for or deal with Wix anymore. Mission accomplished!\n\nIt's exciting to get emails saying a new client has signed up through the form I created!";
+liftingSchoolSite.descriptionLong = "When I first started learning how to build a website, one of my major goals was to eventually rebuild my own business site so I didn't have to pay for or deal with Wix anymore. Mission accomplished!\n\n";
 
 liftingSchoolSite.image = liftingSchoolSitePhoto;
 liftingSchoolSite.icon = liftingSchoolSiteIcon;

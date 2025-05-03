@@ -18,7 +18,7 @@ function changeThemeColor(newColor) {
 }
 
 // Make sure to add "stop event propagation" eventListener to parentElement
-export function createThemeColorMenu(parentElement, colorArray) {
+export function createThemeColorMenu(event, colorArray) {
     if (colorArray === undefined) {
         colorArray = themeColors;
     }
@@ -47,6 +47,8 @@ export function createThemeColorMenu(parentElement, colorArray) {
     });
 
     //Menu pops up just under the parent element with absolute position
+    console.log(event);
+    const parentElement = event.target.parentElement;
     parentElement.style.position = "relative";
     parentElement.appendChild(container);
 }
