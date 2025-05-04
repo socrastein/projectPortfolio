@@ -53,7 +53,7 @@ function saveThemeColorToLocalStorage(color) {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
+  width: 5.5rem;
   height: 2rem;
   padding: 0;
 

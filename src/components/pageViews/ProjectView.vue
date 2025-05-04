@@ -50,6 +50,7 @@ const openWindow = function (targetURL) {
 .mainContainer {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: min(600px, 95%);
 
   gap: 2rem;
