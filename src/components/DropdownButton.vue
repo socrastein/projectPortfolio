@@ -52,7 +52,11 @@ function saveThemeColorToLocalStorage(color) {
 .colorButton {
   display: flex;
   justify-content: center;
-  width: 6rem;
+  align-items: center;
+  width: 5rem;
+  height: 2rem;
+  padding: 0;
+
 }
 
 .dropdownMenu {
@@ -73,7 +77,9 @@ function saveThemeColorToLocalStorage(color) {
   gap: 2rem;
   padding: 8px 12px;
   cursor: pointer;
+  z-index: 50;
 }
+
 .dropdownMenu li:hover {
   background-image: linear-gradient(
     to right,
