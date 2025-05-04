@@ -34,7 +34,7 @@ import gimpIcon from "@/assets/icons/gimp.svg";
         <h2 class="leftAlign">Hard skills:</h2>
         <li>Computer diagnostics and repair (Windows & Linux)</li>
         <li>JavaScript & Python programming</li>
-        <li>Responsive website design & SPA development</li>
+        <li>Responsive website design & SPA development (Vue, Vite, HTML, CSS)</li>
         <li>Git/GitHub version control</li>
         <li>Project management (scheduling, budgeting, documentation)</li>
         <li>Professional document writing and editing</li>

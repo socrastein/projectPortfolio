@@ -11,7 +11,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 6rem;
+  width: 5rem;
   height: 2rem;
   padding: 0;
 }
