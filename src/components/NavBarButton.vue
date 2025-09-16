@@ -11,8 +11,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5.5rem;
+  width: 8rem;
   height: 2rem;
-  padding: 0;
+  padding: .25rem;
 }
 </style>
