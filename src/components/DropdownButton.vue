@@ -35,10 +35,7 @@ function saveThemeColorToLocalStorage(color) {
           }
         "
       >
-        <div
-          class="colorPreview"
-          :style="{ backgroundColor: item.color }"
-        ></div>
+        <div class="colorPreview" :style="{ backgroundColor: item.color }"></div>
       </li>
     </ul>
   </div>
@@ -56,7 +53,6 @@ function saveThemeColorToLocalStorage(color) {
   width: 5.5rem;
   height: 2rem;
   padding: 0;
-
 }
 
 .dropdownMenu {
@@ -81,11 +77,7 @@ function saveThemeColorToLocalStorage(color) {
 }
 
 .dropdownMenu li:hover {
-  background-image: linear-gradient(
-    to right,
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0)
-  );
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
 }
 
 .colorPreview {

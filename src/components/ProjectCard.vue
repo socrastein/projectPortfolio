@@ -22,10 +22,7 @@ const openWindow = function (targetURL) {
     <h3>{{ props.project.descriptionShort }}</h3>
     <div class="buttonContainer">
       <NavBarButton text="View Site" @click="openWindow(props.project.link)" />
-      <NavBarButton
-        text="Read More"
-        @click="router.push('/projects/' + props.project.path)"
-      />
+      <NavBarButton text="Read More" @click="router.push('/projects/' + props.project.path)" />
     </div>
   </div>
 </template>

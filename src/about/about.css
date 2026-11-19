@@ -25,14 +25,13 @@
 }
 
 .aboutDescription h2 {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutDescription hr {
   width: 50%;
   color: var(--themeColor);
 }
-

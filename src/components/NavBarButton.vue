@@ -13,6 +13,6 @@ button {
   align-items: center;
   width: 8rem;
   height: 2rem;
-  padding: .25rem;
+  padding: 0.25rem;
 }
 </style>

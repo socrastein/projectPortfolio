@@ -25,8 +25,8 @@ import gimpIcon from "@/assets/icons/gimp.svg";
 
   <div class="skillsMainContainer">
     <h2>
-      I'm currently studying Computer Science. I spend much of my time
-      sharpening my programming skills and building personal projects.
+      I'm currently studying Computer Science. I spend much of my time sharpening my programming
+      skills and building personal projects.
     </h2>
     <hr />
     <h3>
@@ -72,8 +72,7 @@ import gimpIcon from "@/assets/icons/gimp.svg";
       <Skill :icon="gimpIcon" name="GIMP" />
     </div>
     <h2>
-      I'm always exploring new technologies and building projects to expand my
-      toolkit.
+      I'm always exploring new technologies and building projects to expand my toolkit.
       <br />
       <br />
       <RouterLink to="/projects">Check out my work here!</RouterLink>
@@ -115,11 +114,7 @@ import gimpIcon from "@/assets/icons/gimp.svg";
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  background-image: linear-gradient(
-    135deg,
-    rgb(108, 142, 255),
-    rgb(107, 189, 107)
-  );
+  background-image: linear-gradient(135deg, rgb(108, 142, 255), rgb(107, 189, 107));
   color: transparent;
   background-clip: text;
 }

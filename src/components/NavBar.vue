@@ -57,8 +57,6 @@ const themeColors = [
     },
   },
 ];
-
-
 </script>
 
 <template>

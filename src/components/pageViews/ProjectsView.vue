@@ -15,11 +15,8 @@ const projectsData = getAllProjects();
   <div class="projectsContainer">
     <h1>Projects</h1>
     <h2>
-      These are some of the sites and webapps I've built. Several of them were
-      part of
-      <a href="https://www.theodinproject.com" target="_blank"
-        >The Odin Project</a
-      >
+      These are some of the sites and webapps I've built. Several of them were part of
+      <a href="https://www.theodinproject.com" target="_blank">The Odin Project</a>
     </h2>
     <div v-for="project in projectsData">
       <ProjectCard :project="project" />
@@ -39,11 +36,7 @@ const projectsData = getAllProjects();
 h1 {
   font-size: 3rem;
   font-weight: 800;
-  background-image: linear-gradient(
-    135deg,
-    rgb(108, 142, 255),
-    rgb(107, 189, 107)
-  );
+  background-image: linear-gradient(135deg, rgb(108, 142, 255), rgb(107, 189, 107));
   color: transparent;
   background-clip: text;
 }

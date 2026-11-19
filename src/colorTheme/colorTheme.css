@@ -1,40 +1,39 @@
 .colorThemeMenuContainer {
-    position: absolute;
-    top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-    background-color: var(--backgroundDark);
-    width: fit-content;
-    border: solid var(--themeColor) 1px;
-    z-index: 50;
-
+  position: absolute;
+  top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: var(--backgroundDark);
+  width: fit-content;
+  border: solid var(--themeColor) 1px;
+  z-index: 50;
 }
 
 .colorThemeMenuColorOption {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: .25rem .5rem;
-    gap: 1rem;
-    border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+  gap: 1rem;
+  border-radius: 0;
 }
 
 .colorThemeMenuColorOption:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .colorThemeMenuColorOptionHighlight {
-    background-image: linear-gradient(to right, rgba(255,255,255,.2), rgba(255,255,255,0));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0));
 }
 
 .colorThemeMenuColorLabel {
-    user-select: none;
-    font-size: .9rem;
+  user-select: none;
+  font-size: 0.9rem;
 }
 
 .colorThemeMenuColorPreview {
-    height: 1rem;
-    width: 1.5rem;
-    border-radius: .25rem;
+  height: 1rem;
+  width: 1.5rem;
+  border-radius: 0.25rem;
 }

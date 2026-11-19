@@ -9,31 +9,26 @@ import stache4 from "/src/assets/photos/stache4.jpg";
 // Time between photo changes in milliseconds
 const photoRotationInterval = 2000;
 
-const stacheArray = [
-    stache1,
-    stache2,
-    stache3,
-    stache4
-];
+const stacheArray = [stache1, stache2, stache3, stache4];
 
 export default function buildAboutPage() {
-    const appContainer = document.querySelector("#app");
+  const appContainer = document.querySelector("#app");
 
-    const photoSlider = document.createElement("img");
-    photoSlider.classList.add("aboutPhotoSlider");
+  const photoSlider = document.createElement("img");
+  photoSlider.classList.add("aboutPhotoSlider");
 
-    appContainer.appendChild(photoSlider);
-    loopPhotos();
+  appContainer.appendChild(photoSlider);
+  loopPhotos();
 
-    const title = document.createElement("h1");
-    title.classList.add("aboutTitle");
-    title.textContent = "It's a me! Matteo!";
+  const title = document.createElement("h1");
+  title.classList.add("aboutTitle");
+  title.textContent = "It's a me! Matteo!";
 
-    appContainer.append(title);
+  appContainer.append(title);
 
-    const description = document.createElement("div");
-    description.classList.add("aboutDescription");
-    description.innerHTML = `
+  const description = document.createElement("div");
+  description.classList.add("aboutDescription");
+  description.innerHTML = `
     <h2>Born with a love for logic<hr></h2>
     
     <p>\tI've loved solving puzzles and building things since I was a child. I fondly remember pouring through a "DOS for Dummies" book as a kid, trying to figure out what commands were needed to run DOOM on my family's first computer. I would tear apart RC cars and Christmas lights to make simple circuits with motors and bulbs. In high school I gott <i>really</i> into the Rubik's cube; my fastest time was 1 minute and 6 seconds. To say that I'm something of a nerd would be a profound understatement.\n\n\n</p>
@@ -49,20 +44,19 @@ export default function buildAboutPage() {
     \tSo that's where I currently am in my journey: a computer science student at <a href="https://cwi.edu/" target="_blank">CWI</a>, with a decent background in programming and a handful of amateur projects under my belt.
     </p>`;
 
-    appContainer.append(description);
-
+  appContainer.append(description);
 }
 
 function loopPhotos() {
-    rotatePhoto();
-    setTimeout(() => {
-        loopPhotos();
-    }, photoRotationInterval);
+  rotatePhoto();
+  setTimeout(() => {
+    loopPhotos();
+  }, photoRotationInterval);
 }
 
 function rotatePhoto() {
-    const photoSlider = document.querySelector(".aboutPhotoSlider");
-    let currentPhoto = stacheArray.shift();
-    photoSlider.src = currentPhoto;
-    stacheArray.push(currentPhoto);
+  const photoSlider = document.querySelector(".aboutPhotoSlider");
+  let currentPhoto = stacheArray.shift();
+  photoSlider.src = currentPhoto;
+  stacheArray.push(currentPhoto);
 }

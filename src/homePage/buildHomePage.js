@@ -29,8 +29,7 @@ function buildHeading() {
 
   const title = document.createElement("h1");
   title.classList.add("homeHeaderTitle");
-  title.textContent =
-    "Hi! I'm Matt\n\nThese are some of the coding projects I've built";
+  title.textContent = "Hi! I'm Matt\n\nThese are some of the coding projects I've built";
 
   titleAndPicContainer.appendChild(headerPicture);
   titleAndPicContainer.appendChild(title);

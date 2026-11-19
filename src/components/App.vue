@@ -33,8 +33,8 @@ const skillText = "text";
   border-radius: none;
 
   background-color: black;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 9)),
-    url("/sky2.jpg");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 9)), url("/sky2.jpg");
   background-size: 110% 100%;
   background-position: top center;
   background-repeat: no-repeat;

@@ -86,11 +86,7 @@ h1 {
   text-align: left;
   font-size: 3rem;
   font-weight: 800;
-  background-image: linear-gradient(
-    135deg,
-    rgb(108, 142, 255),
-    rgb(107, 189, 107)
-  );
+  background-image: linear-gradient(135deg, rgb(108, 142, 255), rgb(107, 189, 107));
   color: transparent;
   background-clip: text;
 }
